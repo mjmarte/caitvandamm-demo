@@ -307,10 +307,18 @@ em { font-style: italic; }
 .logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(30px, 4.5vw, 62px); margin-top: 42px; }
 .logos a, .logos > span { display: inline-flex; align-items: center; }
 .logo-img { max-height: 56px; width: auto; max-width: 300px; object-fit: contain; display: block; transition: opacity .25s ease; }
-/* free-standing square-ish logos (semaine / lunar body / iwhi) — bigger, no frame, soft corners */
-.logo-img--icon { max-height: 84px; max-width: 160px; border-radius: 10px; }
+/* free-standing square-ish logos — no frame, soft corners; sized per logo */
+.logo-img--icon { max-width: 220px; border-radius: 10px; }
+.logo-img--icon.is-semaine { max-height: 112px; }  /* 2x */
+.logo-img--icon.is-iwhi    { max-height: 84px; }   /* 1.5x */
+.logo-img--icon.is-lunar   { max-height: 70px; }   /* 1.25x */
 .logos a:hover .logo-img { opacity: .62; }
-@media (max-width: 620px) { .logo-img { max-height: 42px; max-width: 200px; } .logo-img--icon { max-height: 64px; } }
+@media (max-width: 620px) {
+  .logo-img { max-height: 42px; max-width: 200px; }
+  .logo-img--icon.is-semaine { max-height: 84px; }
+  .logo-img--icon.is-iwhi { max-height: 62px; }
+  .logo-img--icon.is-lunar { max-height: 52px; }
+}
 
 /* ---- Press inlay (inset panel, itemized) -------------------------------- */
 .inlay { background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius); padding: clamp(30px, 4.5vw, 58px); box-shadow: inset 0 1px 0 rgba(255,255,255,.4); }
