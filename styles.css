@@ -173,8 +173,8 @@ em { font-style: italic; }
 /* ---- Header / nav ------------------------------------------------------- */
 .site-header { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: saturate(1.2) blur(12px); border-bottom: 1px solid var(--line); }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 82px; }
-.brand { display: flex; align-items: center; gap: 11px; line-height: 1; text-decoration: none; color: var(--text); }
-.brand-mark { width: 34px; height: 34px; flex: none; }
+.brand { display: flex; align-items: center; gap: 10px; line-height: 1; text-decoration: none; color: var(--text); }
+.brand-mark { width: 32px; height: 19px; flex: none; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-text b { font-family: var(--serif); font-size: 1.42rem; font-weight: 480; letter-spacing: -.01em; }
 .brand-text > span { font-size: .62rem; letter-spacing: .26em; text-transform: uppercase; color: var(--stone); margin-top: 6px; font-weight: 500; }
@@ -294,7 +294,7 @@ em { font-style: italic; }
 .detail-band .item p { font-size: .98rem; margin: 0 0 12px; }
 
 /* ---- Wave motif (calm waves, subtle) ------------------------------------ */
-.wave { display: block; width: 96px; height: 18px; margin: 0 0 26px; }
+.wave { display: block; width: 100px; height: 20px; margin: 0 0 26px; }
 .wave path { fill: none; stroke-width: 1.6; }
 .wave .w1 { stroke: var(--accent); }
 .wave .w2 { stroke: var(--accent-soft); opacity: .85; }
