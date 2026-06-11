@@ -339,6 +339,14 @@ body[data-theme="warm"] .site-footer { background: #2C2013; }
 .site-footer .brand-text b { color: #fff; font-size: 1.5rem; }
 .site-footer .brand-text > span { color: var(--taupe); }
 .footer-hours { font-size: .92rem; color: #C8BBA9; line-height: 1.7; }
+/* expanded footer directory */
+.footer-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 48px; padding-bottom: 40px; margin-bottom: 46px; border-bottom: 1px solid rgba(255,255,255,.13); }
+.footer-tag { max-width: 44ch; color: #C8BBA9; font-size: .96rem; line-height: 1.6; margin: 0; }
+.footer-links { display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px 40px; margin-bottom: 44px; }
+.footer-links ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; font-size: .93rem; }
+.footer-links li .ext { font-size: .8em; opacity: .5; margin-left: .25em; white-space: nowrap; }
+.footer-meta { display: flex; flex-wrap: wrap; gap: 6px 26px; align-items: center; padding-bottom: 30px; color: #C8BBA9; font-size: .9rem; }
+.footer-meta b { color: #fff; font-weight: 600; letter-spacing: .02em; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.14); padding-top: 26px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: .82rem; color: #B0A18C; }
 
 /* ---- Theme switcher ----------------------------------------------------- */
@@ -365,6 +373,8 @@ body[data-theme="warm"] .site-footer { background: #2C2013; }
   .index-row p { grid-column: 2; }
   .index-row .go { display: none; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-links { grid-template-columns: 1fr 1fr; }
+  .footer-head { flex-direction: column; align-items: flex-start; }
   .nav-links, .nav-cta .btn { display: none; }
   .nav-toggle { display: block; }
   .nav[data-open="true"] + .mobile-menu { display: block; }
@@ -374,6 +384,7 @@ body[data-theme="warm"] .site-footer { background: #2C2013; }
   :root { --section-pad: 78px; }
   .cards--2 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-links { grid-template-columns: 1fr 1fr; gap: 28px 24px; }
   .featured { gap: 4px 0; }
   .featured a, .featured span { padding: 4px 16px; }
   .theme-switch b { display: none; }
