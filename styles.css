@@ -420,7 +420,7 @@ body[data-theme="warm"] .site-footer { background: #2C2013; }
   .footer-head { flex-direction: column; align-items: flex-start; }
   .nav-links, .nav-cta .btn { display: none; }
   .nav-toggle { display: block; }
-  .nav[data-open="true"] + .mobile-menu { display: block; }
+  .site-header[data-open="true"] .mobile-menu { display: block; }
 }
 @media (max-width: 620px) {
   body { font-size: 18px; }
@@ -438,4 +438,5 @@ body[data-theme="warm"] .site-footer { background: #2C2013; }
 .mobile-menu { display: none; background: var(--surface); border-bottom: 1px solid var(--line); padding: 8px 0 24px; }
 .mobile-menu ul { list-style: none; margin: 0; padding: 0 32px; display: grid; gap: 0; }
 .mobile-menu a { display: block; padding: 16px 0; text-decoration: none; color: var(--text); font-family: var(--serif); font-size: 1.2rem; border-bottom: 1px solid var(--line); }
-.mobile-menu .btn { margin: 20px 32px 0; }
+.mobile-menu .btn { margin: 20px 32px 0; justify-content: center; }
+.mobile-menu .btn--primary { color: var(--primary-ink); }
