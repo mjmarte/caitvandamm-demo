@@ -173,9 +173,11 @@ em { font-style: italic; }
 /* ---- Header / nav ------------------------------------------------------- */
 .site-header { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: saturate(1.2) blur(12px); border-bottom: 1px solid var(--line); }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 82px; }
-.brand { display: flex; flex-direction: column; line-height: 1; text-decoration: none; color: var(--text); }
-.brand b { font-family: var(--serif); font-size: 1.42rem; font-weight: 480; letter-spacing: -.01em; }
-.brand span { font-size: .62rem; letter-spacing: .26em; text-transform: uppercase; color: var(--stone); margin-top: 6px; font-weight: 500; }
+.brand { display: flex; align-items: center; gap: 11px; line-height: 1; text-decoration: none; color: var(--text); }
+.brand-mark { width: 34px; height: 34px; flex: none; }
+.brand-text { display: flex; flex-direction: column; line-height: 1; }
+.brand-text b { font-family: var(--serif); font-size: 1.42rem; font-weight: 480; letter-spacing: -.01em; }
+.brand-text > span { font-size: .62rem; letter-spacing: .26em; text-transform: uppercase; color: var(--stone); margin-top: 6px; font-weight: 500; }
 .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; margin: 0; padding: 0; }
 .nav-links a { text-decoration: none; font-size: .94rem; font-weight: 450; color: var(--text-soft); transition: color .2s ease; white-space: nowrap; padding-bottom: 3px; border-bottom: 1px solid transparent; }
 .nav-links a:hover { color: var(--text); }
@@ -299,6 +301,15 @@ em { font-style: italic; }
 .wave .w3 { stroke: #ff00ff; opacity: .5; }     /* the one sanctioned magenta */
 .center .wave { margin-left: auto; margin-right: auto; }
 
+/* ---- Geometric shape icons (brand law: shapes/lines only, no pictographs) */
+.shape-icon { width: 58px; height: 58px; margin: 0 0 24px; display: block; }
+.shape-icon [stroke] { vector-effect: non-scaling-stroke; }
+.shape-icon path, .shape-icon circle, .shape-icon rect, .shape-icon line { fill: none; stroke: var(--accent); stroke-width: 1.4; }
+
+/* ---- Diamond marker on directory rows ----------------------------------- */
+.detail-band .item b { display: flex; align-items: center; gap: 11px; }
+.detail-band .item b::before { content: ""; width: 8px; height: 8px; flex: none; transform: rotate(45deg); border: 1.4px solid var(--accent); }
+
 /* ---- Quiet CTA band (no loud filled block) ------------------------------ */
 .cta-band { text-align: center; padding: clamp(48px, 7vw, 88px) 0; border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); }
 .cta-band h2 { margin-bottom: .3em; }
@@ -317,8 +328,8 @@ body[data-theme="warm"] .site-footer { background: #2C2013; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
 .site-footer h4 { color: #fff; font-size: .72rem; font-family: var(--sans); font-weight: 600; letter-spacing: .2em; text-transform: uppercase; margin-bottom: 20px; opacity: .8; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; font-size: .96rem; }
-.site-footer .brand b { color: #fff; font-size: 1.5rem; }
-.site-footer .brand span { color: var(--taupe); }
+.site-footer .brand-text b { color: #fff; font-size: 1.5rem; }
+.site-footer .brand-text > span { color: var(--taupe); }
 .footer-hours { font-size: .92rem; color: #C8BBA9; line-height: 1.7; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.14); padding-top: 26px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: .82rem; color: #B0A18C; }
 
