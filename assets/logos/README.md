@@ -1,26 +1,19 @@
-# Press logos — drop real files here
+# Press logos
 
-The homepage "Featured in" strip shows these files. Right now they're **plain-text
-placeholder wordmarks** (generic serif, monochrome) so the layout looks right. To use the
-real logos, just **replace each file below with the official one, keeping the same filename.**
+These files feed the homepage "As featured in" tile row. Each logo sits in a uniform
+white tile (so transparent wordmarks and full-color square logos look consistent together).
 
-| Filename | Publication | Links to |
-|----------|-------------|----------|
-| `elle.svg` | ELLE | (article URL still needed) |
-| `boston-globe.svg` | The Boston Globe | the 2023 article |
-| `lunar-body.svg` | The Lunar Body | the podcast episode |
-| `semaine.svg` | Semaine Health | the interview |
-| `good-witch-kitchen.svg` | Good Witch Kitchen | the podcast episode |
-| `integrative-womens-health.svg` | Integrative Women's Health | the podcast episode |
+| File | Publication | Status |
+|------|-------------|--------|
+| `elle.png` | ELLE | ✅ real logo (article URL still needed to make it clickable) |
+| `boston-globe.png` | The Boston Globe | ✅ real logo |
+| `semaine.png` | Semaine | ✅ real logo |
+| `lunar-body.jpg` | The Lunar Body | ✅ real (podcast cover art) |
+| `integrative-womens-health.png` | Integrative Women's Health | ✅ real logo (white-on-navy) |
+| `good-witch-kitchen.svg` | Good Witch Kitchen | ⛳️ **placeholder** — send the real file |
 
-## Tips for the real files
-- **SVG is best** (crisp at any size). PNG also works — if you use PNG, name it the same
-  but with `.png` and tell me so I can update the one line that points to it.
-- **Monochrome / single-color** logos look most cohesive in the strip. The site renders them
-  in grayscale at ~62% opacity and brightens them to full on hover, so a black-on-transparent
-  logo is ideal. Colored logos work too; they'll just be desaturated until hovered.
-- **Transparent background.** Trim tight to the wordmark (no big margins).
-- Aim for a similar **visual height** across logos (~40px tall artwork); the site scales them.
-
-Most publications have these in a "press kit," "media," or "brand assets" page. Grab the
-official SVG/PNG and drop it in here.
+## To update a logo
+Replace the file, keeping the same name. Any format works (SVG / PNG / JPG); if you change
+the extension, tell me so I update the one `<img src>` line. Transparent PNG/SVG looks best,
+but colored/square logos are fine — the tile frames them. Aim for ~logo artwork trimmed
+fairly tight (logos with lots of built-in padding render small inside the tile).
