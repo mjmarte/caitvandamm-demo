@@ -310,14 +310,14 @@ em { font-style: italic; }
 /* free-standing square-ish logos — no frame, soft corners; sized per logo */
 .logo-img--icon { max-width: 220px; border-radius: 10px; }
 .logo-img--icon.is-semaine { max-height: 112px; }  /* 2x */
+.logo-img--icon.is-lunar   { max-height: 112px; }  /* 2x */
 .logo-img--icon.is-iwhi    { max-height: 84px; }   /* 1.5x */
-.logo-img--icon.is-lunar   { max-height: 70px; }   /* 1.25x */
 .logos a:hover .logo-img { opacity: .62; }
 @media (max-width: 620px) {
   .logo-img { max-height: 42px; max-width: 200px; }
   .logo-img--icon.is-semaine { max-height: 84px; }
+  .logo-img--icon.is-lunar { max-height: 84px; }
   .logo-img--icon.is-iwhi { max-height: 62px; }
-  .logo-img--icon.is-lunar { max-height: 52px; }
 }
 
 /* ---- Press inlay (inset panel, itemized) -------------------------------- */
