@@ -265,6 +265,8 @@ em { font-style: italic; }
 .creds li { display: grid; grid-template-columns: 64px 1fr; gap: 18px; padding: 14px 0; border-bottom: 1px solid var(--line); align-items: baseline; color: var(--text-soft); }
 .creds .yr { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--accent); }
 .creds b { color: var(--text); font-weight: 500; }
+.creds-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 clamp(36px, 5vw, 72px); }
+@media (max-width: 760px) { .creds-grid { grid-template-columns: 1fr; } .creds-grid .creds + .creds { border-top: 0; } }
 
 /* ---- Pull quote / testimonial ------------------------------------------- */
 .quote { padding: 8px 0; }
