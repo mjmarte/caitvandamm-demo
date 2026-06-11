@@ -299,6 +299,22 @@ em { font-style: italic; }
 .lg-semaine { font-family: var(--serif); font-weight: 440; font-size: clamp(1.05rem, 1.9vw, 1.45rem); letter-spacing: .3em; text-transform: uppercase; }
 .featured-note { font-size: .82rem; color: var(--stone); margin-top: 26px; }
 
+/* ---- Press inlay (inset panel, itemized) -------------------------------- */
+.inlay { background: var(--surface); border: 1px solid var(--line-strong); border-radius: var(--radius); padding: clamp(30px, 4.5vw, 58px); box-shadow: inset 0 1px 0 rgba(255,255,255,.4); }
+.inlay > .eyebrow { margin-bottom: 1rem; }
+.inlay h2 { margin-bottom: .15em; }
+.press-list { list-style: none; margin: 30px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.press-list li { border-bottom: 1px solid var(--line); }
+.press-row { display: grid; grid-template-columns: minmax(150px, .85fr) 1.7fr auto; gap: 10px 30px; align-items: baseline; padding: 22px 6px; text-decoration: none; color: var(--text); transition: background .25s ease; }
+a.press-row:hover { background: color-mix(in srgb, var(--accent-soft) 9%, transparent); }
+.press-row .po { font-family: var(--serif); font-weight: 500; font-size: 1.18rem; letter-spacing: -.005em; }
+.press-row .po.is-elle { text-transform: uppercase; letter-spacing: .12em; font-weight: 600; }
+.press-row .pt { font-family: var(--serif); font-style: italic; color: var(--text-soft); line-height: 1.4; }
+.press-row .pk { justify-self: end; font-family: var(--sans); font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+.press-row--ph { opacity: .68; }
+.press-row--ph .pk { color: var(--stone); }
+@media (max-width: 760px) { .press-row { grid-template-columns: 1fr; gap: 4px; padding: 18px 4px; } .press-row .pk { justify-self: start; margin-top: 4px; } }
+
 /* ---- Detail band (facts) ------------------------------------------------ */
 .detail-band { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); }
 .detail-band .item { padding: 34px 30px 34px 0; border-bottom: 1px solid var(--line); border-right: 1px solid var(--line); padding-left: 30px; }
